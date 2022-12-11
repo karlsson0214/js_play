@@ -61,7 +61,7 @@ console.log("submarine".endsWith("e")); // true
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 // ----------------
-// math library
+// Math library
 // ----------------
 console.log(Math.random()); // slumptal mellan 0 och 1 men inte 1, [0, 1)
 console.log(Math.floor(3.14)); // 3 släng decimaldelen
@@ -124,6 +124,24 @@ x++ //öka x med 1 till 10
 
 x--; //minska x med 1 till 8
 
+// ----------------
+// comparison operators
+// --------------------
+/*
+< is smaller  than
+> is larger than
+<= is smaller than or equal to
+>= is larger than or equal to
+=== is equal to
+!== is not equal to
+ */
+
+// not operator
+// !
+
+
+
+
 // -------------
 // if - statement
 // --------------
@@ -135,4 +153,90 @@ if (randomNumber < 0.5) {
 else {
     console.log("klave");
 }
+
+// ----------------
+// ternary operator
+// ----------------
+Math.random() < 0.5 ? console.log("krona") : console.log("klave");
+
+// ---------------------------
+// if - statement with else if
+// ---------------------------
+let diceOne = Math.random() * 6 + 1; 
+diceOne = Math.floor(diceOne); // 1, 2, 3, 4, 5, 6
+let diceTwo = Math.random() * 6 + 1;
+diceTwo = Math.floor(diceTwo);
+console.log("Dice show: " + diceOne + " " + diceTwo);
+// concat operators
+// && and
+// || or
+if (diceOne === 6 && diceTwo === 6) {
+    console.log("You win 10 Euro!");
+}
+else if (diceOne === diceTwo) {
+    console.log("You win 1 Euro!");
+}
+else {
+    console.log("You lost!");
+}
+
+// ---------
+// array
+// ---------
+
+// -----------------------
+// while - statement
+// -----------------------
+
+// ----------------------
+// for - statement
+// ----------------------
+
+// -------------
+// iterator
+// -------------
+
+// ---------------
+// .forEach()
+// -------------
+
+// --------
+// .map()
+// ----------
+
+// ----------
+// .filter()
+// ------
+
+// -------
+// .some()
+// -------
+
+// --------
+// .every()
+// --------
+
+// more about iterators:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods
+
+
+
+// --------------------
+// functions
+// --------------------
+
+// ---------------------
+// scope - sv. räckvidd
+// ---------------------
+
+
+// ---------------
+// Object
+// ---------------
+
+
+// -----------------
+// Classes
+// --------------------
+
 
